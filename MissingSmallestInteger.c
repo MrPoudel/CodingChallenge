@@ -1,4 +1,5 @@
 /* This program will find the smallest missing positive integer in a given Array of size N. */
+/* Complexity: O(n^2) */
 
 #include <stdbool.h>
 #include <assert.h>
