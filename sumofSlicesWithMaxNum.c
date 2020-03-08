@@ -58,6 +58,6 @@ int main()
 	int size = sizeof(arr) / sizeof(arr[0]);
 	int k = 4;
 	int ans = calculateMaxSumLength(arr, size, k);
-	cout << "Max Length :: " << ans << endl;
+	cout << "Max sum :: " << ans << endl; // this will print --> 14 --> [2, 1, 4] and [3,4]
 	return 0;
 }
