@@ -1,6 +1,6 @@
 //============================================================================
 // Name        : template-demo.cpp
-// Author      : Tanken from https://www.youtube.com/watch?v=IdwJdJw65tU&list=PLGLfVvz_LVvQ9S8YSV0iDsuEU8v11yP9M&index=19
+// Author      : Taken from https://www.youtube.com/watch?v=IdwJdJw65tU&list=PLGLfVvz_LVvQ9S8YSV0iDsuEU8v11yP9M&index=19
 // Version     :
 // Copyright   : Your copyright notice
 // Description : Hello World in C++, Ansi-style
