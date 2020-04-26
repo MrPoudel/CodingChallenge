@@ -21,6 +21,9 @@ public:
 };
 
 ostream& operator<<(ostream& out, const Complex& other);
+Complex operator+(const Complex& c1, const Complex& c2);
+Complex operator+(const Complex& c1, const double d);
+Complex operator+(const double d, const Complex& c1);
 
 } /* namespace caveofprogramming */
 
