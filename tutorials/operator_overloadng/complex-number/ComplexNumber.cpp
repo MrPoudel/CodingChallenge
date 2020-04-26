@@ -1,11 +1,3 @@
-//============================================================================
-// Name        : ComplexNumber.cpp
-// Author      : Bal K. Poudel
-// Version     :
-// Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
-//============================================================================
-
 #include "Complex.h"
 
 using namespace caveofprogramming;
