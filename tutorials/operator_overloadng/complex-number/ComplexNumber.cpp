@@ -1,6 +1,7 @@
 
 #include "Complex.h"
 
+using namespace std;
 using namespace caveofprogramming;
 
 int main() {
@@ -25,25 +26,24 @@ int main() {
 
 	cout << 5 + c1 + 5 + 5 + c1 << endl;
 
+	if (c1 == c2){
+		cout << "Equal" << endl;
+	}
+	else{
+		cout << "Not Equal" << endl;
+	}
+
+	cout << endl;
+
+	if (c1 != c4){
+			cout << "Not Equal" << endl;
+		}
+		else{
+			cout << "Equal" << endl;
+		}
+
+	cout << "Conjugate is:" << *c1 << endl;
+
 	cout << "Exited successfully!" << endl;
 	return 0;
 }
-
-//Output
-//(3,4)
-//
-//(9,12)
-//
-//Copied
-//Assignment
-//Parameterless!
-//Assignment
-//(12,14)
-//
-//(8,4)
-//
-//(8,4)
-//
-//(21,8)
-//
-//Exited successfully!

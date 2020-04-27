@@ -3,7 +3,8 @@
 
 #include <iostream>
 
-using namespace std;
+using std::ostream;
+
 namespace caveofprogramming {
 
 class Complex {
@@ -24,6 +25,9 @@ ostream& operator<<(ostream& out, const Complex& other);
 Complex operator+(const Complex& c1, const Complex& c2);
 Complex operator+(const Complex& c1, const double d);
 Complex operator+(const double d, const Complex& c1);
+bool operator==(const Complex lhs, const Complex s);
+bool operator!=(const Complex lhs, const Complex s);
+Complex operator*(const Complex& c);
 
 } /* namespace caveofprogramming */
 

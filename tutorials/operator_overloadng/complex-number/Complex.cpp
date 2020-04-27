@@ -1,5 +1,9 @@
 #include "Complex.h"
 
+using std::cout;
+using std::endl;
+
+
 namespace caveofprogramming {
 
 Complex::Complex():real(0), imaginary(0) {
@@ -43,6 +47,19 @@ Complex operator+(const Complex& c1, const double d){
 
 Complex operator+(const double d, const Complex& c1){
 	return Complex(c1.getReal() + d, c1.getImaginary() );
+}
+
+bool operator==(const Complex lhs, const Complex rhs)/*const*/{ // Why there cann't be a const : https://stackoverflow.com/a/10982718
+	return((lhs.getReal() == rhs.getReal()) && (lhs.getImaginary() == rhs.getImaginary()));
+}
+
+bool operator!=(const Complex lhs, const Complex rhs){
+	return !(lhs == rhs); // This calls the comparision operator above.
+}
+
+Complex operator*(const Complex& c){
+
+	return Complex(c.getReal(), -c.getImaginary());
 }
 
 } /* namespace caveofprogramming */
