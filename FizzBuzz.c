@@ -25,3 +25,32 @@ long findTheShortestRoof(vector<long> &cars, int k) {
 
     return min + 1;
 }
+
+// Remove the unnecessary steps:
+int getMaxDeletions(string s) {
+    int xPos = 0;
+    int yPos = 0;
+
+    for(auto dir:s){
+        switch(dir){
+            case 'U':
+                yPos++;
+                break;
+            case 'D':
+                yPos--;
+                break;
+            case 'L':
+                xPos--;
+                break;
+            case 'R':
+                xPos++;
+                break;
+            default:
+                EXIT_FAILURE;
+        }
+    }
+
+    cout << "xPos=" << xPos << ",yPos=" << yPos << ",size=" << s.size() << endl;
+
+    return (s.size() - (abs(xPos) + abs(yPos)));
+}
