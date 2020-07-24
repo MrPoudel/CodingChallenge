@@ -6,6 +6,8 @@ string isBalanced(string s) {
     for (char x:s) {
         switch(x) {
         case '(':
+        case '{':
+        case '[': 
              store.push(x);
              break;
 
@@ -14,49 +16,26 @@ string isBalanced(string s) {
                 store.pop();
                 break;
             }
-            else {
-                balanced = false;
-                break;
-            } 
-
-        case '{':
-             store.push(x);
-             break;        
+            return "NO";          
 
         case '}':
             if(!store.empty() && store.top() == '{') {
                 store.pop();
                 break;
             }
-            else {
-                balanced = false;
-                break;
-            }
-   
-        case '[': 
-            store.push(x);
-            break;
-
+            return "NO"; 
+       
         case ']':
             if(!store.empty() && store.top() == '[') {
                 store.pop();
                 break;
             }
-            else {
-                balanced = false;
-                break;
-            }
-
+            return "NO";
         default:
             break;  
-        }            
+        }        
     }
 
-    if(balanced) {      
-        return "YES";
-    }
-    else{        
-        return "NO";
-    } 
+   return store.empty() ? "YES" : "NO";
         
 }
