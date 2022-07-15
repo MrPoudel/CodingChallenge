@@ -1,7 +1,9 @@
 // CPP program to calculate max sum lengths of
 // non overlapping contiguous subarrays with k as
 // max element
+
 #include <bits/stdc++.h>
+
 using namespace std;
 
 // Returns max sum of lengths with maximum element
@@ -52,6 +54,7 @@ int calculateMaxSumLength(int arr[], int n, int k)
 }
 
 // driver program
+
 int main()
 {
 	int arr[] = { 2, 1, 4, 9, 2, 3, 8, 3, 4 };
