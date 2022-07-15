@@ -8,6 +8,7 @@ using namespace std;
 
 // Returns max sum of lengths with maximum element
 // as k
+
 int calculateMaxSumLength(int arr[], int n, int k)
 {
 	//int ans = 0; // final sum of lengths
